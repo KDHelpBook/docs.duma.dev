@@ -6,13 +6,28 @@ site:
     - khb-authoring
     - khb-publishing
     - khb-registry
+    - nfc-to-rfid
+
   folders:
     - id: open-source
       title: Open Source Projects
       titles:
         pl: Projekty Open Source
       children:
-        - collection: khb-docs
+        - id: documentation
+          title: Documentation
+          titles:
+            pl: Dokumentacja
+          children:
+            - collection: khb-docs
+
+        - id: autoid-solutions
+          title: AutoID Solutions
+          titles:
+            pl: Rozwiązania AutoID
+          children:
+            - collection: nfc-to-rfid
+
   config:
     externalSources: false
     pwa: false
@@ -27,4 +42,11 @@ publishers:
       - khb-authoring
       - khb-publishing
       - khb-registry
+    force: false
+
+  - repository: kduma-autoid/android-sunmi-nfc-to-uhf-rfid
+    ref: refs/heads/main
+    environment: null
+    docsets:
+      - nfc-to-rfid
     force: false
