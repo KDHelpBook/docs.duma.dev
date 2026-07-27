@@ -5,6 +5,7 @@ site:
   order:
     - khb-authoring
     - khb-publishing
+    - khb-registry
   folders:
     - id: khb
       title: KD Help Book
@@ -25,4 +26,5 @@ publishers:
     docsets:
       - khb-authoring
       - khb-publishing
+      - khb-registry
     force: false
