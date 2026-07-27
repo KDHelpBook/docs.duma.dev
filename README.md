@@ -7,6 +7,8 @@ Official Cloudflare registry for the `khb-authoring`, `khb-publishing`, and
 The Worker and its R2 bucket are generated from
 [`KDHelpBook/cf-registry-template`](https://github.com/KDHelpBook/cf-registry-template).
 Instance layout and GitHub OIDC permissions live in `khb-registry.yml`.
+The production Worker and its `DOCSETS` R2 bucket are both named
+`docs-duma-dev`.
 
 ## Development
 
