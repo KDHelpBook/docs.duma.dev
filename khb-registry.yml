@@ -7,17 +7,17 @@ site:
     - khb-publishing
     - khb-registry
   folders:
-    - id: khb
-      title: KD Help Book
+    - id: open-source
+      title: Open Source Projects
       titles:
-        pl: KD Help Book
+        pl: Projekty Open Source
       children:
         - collection: khb-docs
   config:
-    externalSources: true
+    externalSources: false
     pwa: false
     prefetch: false
-    prefetchLocked: true
+    prefetchLocked: false
 
 publishers:
   - repository: KDHelpBook/monorepo
