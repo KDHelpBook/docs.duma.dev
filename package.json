@@ -1,0 +1,22 @@
+{
+  "name": "khb-cf-registry-instance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "khb-cf-registry validate khb-registry.yml",
+    "build": "khb-cf-registry prepare khb-registry.yml",
+    "typecheck": "npm run build && tsc --noEmit",
+    "check": "npm run validate && npm run typecheck",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@kdhelpbook/cf-registry": "0.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260722.1",
+    "typescript": "^5.9.3",
+    "wrangler": "~4.114.0"
+  }
+}

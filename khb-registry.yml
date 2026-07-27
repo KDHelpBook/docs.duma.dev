@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=./node_modules/@kdhelpbook/cf-registry/schema/khb-registry.schema.json
+schema: 1
+
+site:
+  order: []
+  folders: []
+  config:
+    externalSources: true
+    pwa: false
+    prefetch: false
+    prefetchLocked: false
+
+# Add each GitHub repository that may publish documentation. An empty list is
+# safe: the registry stays read-only until an explicit permission is committed.
+publishers: []
