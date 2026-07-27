@@ -14,7 +14,7 @@ site:
       children:
         - collection: khb-docs
   config:
-    externalSources: false
+    externalSources: true
     pwa: false
     prefetch: false
     prefetchLocked: true
