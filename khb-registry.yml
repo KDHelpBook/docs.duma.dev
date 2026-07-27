@@ -14,10 +14,10 @@ site:
       children:
         - collection: khb-docs
   config:
-    externalSources: true
+    externalSources: false
     pwa: false
     prefetch: false
-    prefetchLocked: false
+    prefetchLocked: true
 
 publishers:
   - repository: KDHelpBook/monorepo
