@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "khb-registry",
+  "name": "khb-docs-registry",
   "main": "src/index.ts",
   "compatibility_date": "2026-07-27",
   "preview_urls": false,

@@ -2,14 +2,27 @@
 schema: 1
 
 site:
-  order: []
-  folders: []
+  order:
+    - khb-authoring
+    - khb-publishing
+  folders:
+    - id: khb
+      title: KD Help Book
+      titles:
+        pl: KD Help Book
+      children:
+        - collection: khb-docs
   config:
     externalSources: true
     pwa: false
     prefetch: false
     prefetchLocked: false
 
-# Add each GitHub repository that may publish documentation. An empty list is
-# safe: the registry stays read-only until an explicit permission is committed.
-publishers: []
+publishers:
+  - repository: KDHelpBook/monorepo
+    ref: refs/heads/main
+    environment: null
+    docsets:
+      - khb-authoring
+      - khb-publishing
+    force: false
